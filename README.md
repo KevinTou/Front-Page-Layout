@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Retail Clone Project
 
-## Available Scripts
+By: Anthony and Kevin
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This a paired programming project using a MERN (MongoDB, Express.js, React.js, and Node.js) stack as well as Material-UI for building the UI.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The idea is to create a clone of a generic online retail website with various features:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Login system (admin/customer)
+- Inventory tracker
+- etc.
 
-### `npm test`
+## Front-end Process
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 4/26/2019:
 
-### `npm run build`
+  - Created the concept for the project and split the initial front-end and back-end set-up.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 4/27/2019:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+  - Used `create-react-app` for the starting boilerplate.
+  - Removed some of the generic boilerplate files (such as the `logo.svg`)
+  - Added `/actions` and `/reducers` folders for future Redux uses
+  - Added `/components` folder to store future components
+  - Added `@material-ui/core` and `@material-ui/icons` packages to build UI
+    _Note: I chose the SVG icons for better performance as recommended by the official documentation_
+  - Added the `Roboto` CDN from Google fonts into the `index.html` file
+  - Added `/components/navbar` and started to build initial navigation bar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 4/28/2019
 
-### `npm run eject`
+  - Built a basic navigation bar in regular HTML, which will later be converted into Material-UI components
+  - Added `/component/banner` and created a basic banner image placeholder and lorem ipsum description text
+  - Added `/component/main-container` to hold the main content
+  - Added `/component/card` and to hold various reusable cards to use throughout the website
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- 4/29/2019
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - Added `/card/product` and `/card/offer` for generic products and offers that a retailer might have
+  - Added `/component/footer` with basic information
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- 4/30/2019
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  - Added `/card/popular-items` for a list of popular items
+  - First version of the front page completed (DESKTOP)
+    - Used basic HTML and CSS (flexbox) to create a desktop layout
+    - Still need to write breakpoints for mobile
