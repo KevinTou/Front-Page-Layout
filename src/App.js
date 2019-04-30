@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+// Component imports
+import NavBar from "./components/navbar/NavBar";
+import Banner from "./components/banner/Banner";
+import MainContainer from "./components/main-container/MainContainer";
+import Footer from "./components/footer/Footer";
+
+// @material-ui/core imports
+// import { CssBaseline } from "@material-ui/core";
+// import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+
+// const theme = createMuiTheme();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Banner />
+      <MainContainer />
+      <Footer />
+    </>
   );
 }
 
