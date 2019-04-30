@@ -1,0 +1,44 @@
+.popular-items-wrapper {
+  width: 89%;
+  margin: 15px;
+}
+
+.popular-items-container {
+  border: 1px solid green;
+  max-width: 1000px;
+  padding: 30px;
+  display: flex;
+}
+
+.popular-items-list {
+  margin: 0 20px;
+}
+
+.popular-item {
+  margin: 15px;
+}
+
+.popular-item-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.popular-item-image {
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 64px;
+  max-height: 64px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-item-image p {
+  font-weight: bold;
+}
+
+.popular-item-description {
+  padding: 0 15px;
+}
