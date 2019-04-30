@@ -1,0 +1,28 @@
+.footer-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 57px;
+}
+
+.footer-left-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-right-container {
+  text-align: center;
+}
