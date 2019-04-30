@@ -1,0 +1,48 @@
+.nav-wrapper {
+  /* TODO: Maybe add a polyfill for position: sticky or change to position: fixed with margin-top on banner component */
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  background-color: blue;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  width: 100px;
+  background-color: green;
+}
+
+.empty-space {
+  flex-grow: 10;
+}
+
+.search-bar {
+  flex-grow: 2;
+  height: 24px;
+}
+
+.link-container {
+  flex-grow: 1;
+  display: flex;
+  width: 200px;
+  background-color: red;
+  justify-content: space-evenly;
+}
+
+.link-item {
+  height: 30px;
+  width: 50px;
+}
